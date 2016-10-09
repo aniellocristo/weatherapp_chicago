@@ -1,0 +1,256 @@
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+.main-container {
+  margin: 50px auto;
+  padding: 30px 10px;
+  /*background:linear-gradient(0deg,rgba(155,175,191,0.6),rgba(155,175,191,0.6)),url("../images/chicago01.JPG");*/
+  background-size:cover;
+  /*background-color: #9BAFBF;*/
+  border-radius: 10px;
+  width: 800px;
+  color: #fff;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
+
+.location {
+  text-align: right;
+  font-size: 40px;
+  margin: 4px 0 0 30px;
+}
+
+
+.date {
+    margin: 4px 0 0 30px;
+}
+
+.time {
+    margin: 4px 0 0 30px;
+}
+
+
+/*Current Day Weather*/
+
+.flex-1 {
+  display: -webkit-flex;
+  display: flex;
+ -webkit-align-items: space-between;
+         align-items: space-between;
+ -webkit-justify-content: space-between;
+         justify-content: space-between;
+}
+
+.flex-3 {
+  display: flex;
+  margin-top: -10px;
+}
+
+#humid-1 {
+  display: inline-block;
+  margin-left: -10px;
+}
+
+#wind-1 {
+  display: inline-block;
+  margin-left: -5px;
+}
+
+#day-1 {
+  height: 200px;
+  width: 200px;
+  color: #fff;
+}
+
+#temp-1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+#icon-1 {
+  display: block;
+  margin: auto;
+  margin-top: -30px;
+  width: 180px;
+  height: 180px;
+}
+
+.sm-icon {
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+/* Four Day Forecast*/
+
+#flex-2 {
+  display: -webkit-flex;
+  display: flex;
+ -webkit-align-items: center;
+         align-items: center;
+ -webkit-justify-content: center;
+         justify-content: center;
+  margin-top: 50px;
+}
+
+/*Secondary Day Holder*/
+
+.second-day {
+  margin: 0 10px;
+  align-items: center;
+  background:linear-gradient(to top, rgba(155,175,191,0.7), rgba(155,175,191,0.7));
+  border-radius: 10px;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+  height: 175px;
+  width: 175px;
+  color: #fff;
+  text-align: center;
+}
+
+p {
+  display: inline;
+}
+
+
+/*Day 2*/
+
+#p0 {
+  display: block;
+  margin-top: 0px;
+  font-size: 18px;
+  background: rgba(165,180,200,0.9);
+  border-radius: 10px 10px 0 0px;
+}
+
+#icon-2 {
+  display: block;
+  margin: -30px auto -15px auto;
+  width: 150px;
+  height: 150px;
+}
+
+/*Day 3*/
+
+#p1 {
+  display: block;
+  margin-top: 0px;
+  font-size: 18px;
+  background: rgba(165,180,200,0.9);
+  border-radius: 10px 10px 0 0px;
+}
+
+#icon-3 {
+  display: block;
+  margin: -30px auto -15px auto;
+  width: 150px;
+  height: 150px;
+}
+
+/*Day 4*/
+
+#p2 {
+  display: block;
+  margin-top: 0px;
+  font-size: 18px;
+  background: rgba(165,180,200,0.9);
+  border-radius: 10px 10px 0 0px;
+}
+
+#icon-4 {
+  display: block;
+  margin: -30px auto -15px auto;
+  width: 150px;
+  height: 150px;
+}
+
+/*Day 5*/
+
+#p3 {
+  display: block;
+  margin-top: 0px;
+  font-size: 18px;
+  background: rgba(165,180,200,0.9);
+  border-radius: 10px 10px 0 0px;
+}
+
+#icon-5 {
+  display: block;
+  margin: -30px auto -15px auto;
+  width: 150px;
+  height: 150px;
+}
+
+/*Media Query*/
+
+@media (max-width: 850px) {
+
+  .main-container {
+    overflow: auto;
+    width: 400px;
+  }
+
+.location {
+    margin: 0;
+    margin-top: 8px 0 0 0;
+    font-size: 32px;
+    text-align: center;
+}
+
+.date {
+    margin: 0;
+    text-align: center;
+}
+
+.time {
+    margin: 0;
+    text-align: center;
+}
+
+.flex-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: -100px;
+}
+
+#icon-1 {
+  display: block;
+  margin: auto;
+  width: 180px;
+  height: 180px;
+}
+
+#day-1 {
+  margin: 0 auto;
+}
+
+  #flex-2 {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+   -webkit-justify-content: center;
+           justify-content: center;
+    margin-top: 50px;
+  }
+
+  .second-day {
+    margin: 10px 0;
+    align-items: center;
+    background:linear-gradient(to top, rgba(155,175,191,0.7), rgba(155,175,191,0.7));
+    border-radius: 10px;
+    	-webkit-box-shadow: 0 8px 6px -6px black;
+    	   -moz-box-shadow: 0 8px 6px -6px black;
+    	        box-shadow: 0 8px 6px -6px black;
+    height: 175px;
+    width: 300px;
+    color: #fff;
+    text-align: center;
+  }
+
+}
