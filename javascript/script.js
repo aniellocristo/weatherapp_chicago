@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var api = "http://api.openweathermap.org/data/2.5/weather?q=Chicago&units=imperial&appid=36dc71f6d4f93ef7c5fe5d26dc871995";
+var api = loadJSON("http://api.openweathermap.org/data/2.5/weather?q=Chicago&units=imperial&appid=36dc71f6d4f93ef7c5fe5d26dc871995", 'jsonp');
 
 var api2 =
 "http://api.openweathermap.org/data/2.5/forecast/daily?q=Chicago&units=imperial&cnt=5&appid=36dc71f6d4f93ef7c5fe5d26dc871995"
