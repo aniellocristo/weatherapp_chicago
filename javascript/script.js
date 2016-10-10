@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
-var api = "https://api.openweathermap.org/data/2.5/weather?q=Chicago&units=imperial&appid=36dc71f6d4f93ef7c5fe5d26dc871995";
+var api = "http://api.openweathermap.org/data/2.5/weather?q=Chicago&units=imperial&appid=36dc71f6d4f93ef7c5fe5d26dc871995";
 
 var api2 =
-"https://api.openweathermap.org/data/2.5/forecast/daily?q=Chicago&units=imperial&cnt=5&appid=36dc71f6d4f93ef7c5fe5d26dc871995"
+"http://api.openweathermap.org/data/2.5/forecast/daily?q=Chicago&units=imperial&cnt=5&appid=36dc71f6d4f93ef7c5fe5d26dc871995"
 
 // Current weather
 $.getJSON(api, function(data){
