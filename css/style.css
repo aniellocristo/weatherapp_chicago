@@ -192,7 +192,8 @@ p {
 
   .main-container {
     overflow: auto;
-    width: 350px;
+    width: 275px;
+
   }
 
 .location {
@@ -248,7 +249,7 @@ p {
     	   -moz-box-shadow: 0 8px 6px -6px black;
     	        box-shadow: 0 8px 6px -6px black;
     height: 175px;
-    width: 300px;
+    width: 225px;
     color: #fff;
     text-align: center;
   }
