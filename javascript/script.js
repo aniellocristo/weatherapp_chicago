@@ -1,5 +1,25 @@
 $(document).ready(function(){
 
+//Current Location IP Call
+$.getJSON("http://jsonip.com/?callback=?", function(data) {
+        var ip = (data.ip);
+
+
+//Append ip to geolocation link to obtain JSON.
+var loc = ("http://freegeoip.net/json/"+ip);
+        console.log(loc);
+    
+//Get city and state name.
+$.getJSON(loc, function(data){
+    var area = data.city;
+    var state = data.region_code;
+
+//Append city name to HTML class.
+  $(".location").html(area +", " + state);
+
+  });
+});
+
 //Current Weather
 
 var api = "https://api.apixu.com/v1/forecast.json?key=1a747318d36e4dbfb9545640161010&q=Chicago&days=5";
