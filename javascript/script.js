@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
 //Current Location IP Call
-$.getJSON("http://jsonip.com/?callback=?", function(data) {
+$.getJSON("https://jsonip.com/?callback=?", function(data) {
         var ip = (data.ip);
 
 
 //Append ip to geolocation link to obtain JSON.
-var loc = ("http://freegeoip.net/json/"+ip);
+var loc = ("https://freegeoip.net/json/"+ip);
         console.log(loc);
     
 //Get city and state name.
