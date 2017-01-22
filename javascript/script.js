@@ -5,24 +5,23 @@ $.getJSON("https://jsonip.com/?callback=?", function(data) {
         var ip = (data.ip);
 
 
-//Append ip to geolocation link to obtain JSON.
+//Append IP to geolocation link to obtain JSON.
 var loc = ("https://freegeoip.net/json/"+ip);
-        console.log(loc);
     
 //Get city and state name.
 $.getJSON(loc, function(data){
-    var area = data.city;
+    area = data.city;
     var state = data.region_code;
 
 //Append city name to HTML class.
   $(".location").html(area +", " + state);
 
-  });
-});
 
 //Current Weather
 
-var api = "https://api.apixu.com/v1/forecast.json?key=1a747318d36e4dbfb9545640161010&q=Chicago&days=5";
+var api = "https://api.apixu.com/v1/forecast.json?key=1a747318d36e4dbfb9545640161010&q="+area+"&days=5";
+console.log(api);
+
 
 $.getJSON(api, function(data){
   //Current Forecast Variables
@@ -51,8 +50,6 @@ $.getJSON(api, function(data){
   var fTempMax5 = data.forecast.forecastday[3].day.maxtemp_f;
   var fTempMin5 = data.forecast.forecastday[3].day.mintemp_f;
   var wIcon5 = data.forecast.forecastday[3].day.condition.code;
-
-  console.log(data);
 
 //Determine if it is daytime or night time for icon
 if (dayTime === 1) {
@@ -133,4 +130,7 @@ function dayOfWeek() {
 
 dayOfWeek()
 
+
+    });
+  });
 });
