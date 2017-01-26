@@ -64,7 +64,7 @@ if (dayTime === 1) {
   $("#humid-1").html(humid1 + "&#37;");
   $("#wind-1").html(Math.round(wind1) + " mph");
 
-//Assigning information to day html elements
+//Assigning information to day 1 html elements
   $("#icon-2")[0].setAttribute("src", "images/"+ wIcon2 + ".png");
   $("#temp-max-2").html(Math.round(fTempMax2) + "&#8457;");
   $("#temp-min-2").html(Math.round(fTempMin2) + "&#8457;");
