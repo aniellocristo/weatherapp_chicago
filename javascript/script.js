@@ -20,8 +20,6 @@ $.getJSON(loc, function(data){
 //Current Weather
 
 var api = "https://api.apixu.com/v1/forecast.json?key=1a747318d36e4dbfb9545640161010&q="+area+"&days=5";
-console.log(api);
-
 
 $.getJSON(api, function(data){
   //Current Forecast Variables
@@ -68,35 +66,35 @@ if (dayTime === 1) {
 }
 
 //Assigning information to current weather
-  $("#icon-1")[0].setAttribute("src", "images/"+ wIcon1 + dayTime + ".png");
+  $("#icon-1")[0].setAttribute("src", "images/"+ wIcon1 + dayTime + ".svg");
   $("#temp-1").html(Math.round(fTemp1) + " &#8457;");
   $("#tempc-1").html(Math.round(cTemp1) + " &#8451;");
   $("#humid-1").html(humid1 + "&#37;");
   $("#wind-1").html(Math.round(wind1) + " mph");
 
 //Assigning information to day 1 html elements
-  $("#icon-2")[0].setAttribute("src", "images/"+ wIcon2 + ".png");
+  $("#icon-2")[0].setAttribute("src", "images/"+ wIcon2 + ".svg");
   $("#temp-max-2").html(Math.round(fTempMax2) + "&#8457;");
   $("#tempc-max-2").html(Math.round(cTempMax2) + "&#8451;");
   $("#temp-min-2").html(Math.round(fTempMin2) + "&#8457;");
   $("#tempc-min-2").html(Math.round(cTempMin2) + "&#8451;");
 
 //Assign informtion to day 2 html elements
-  $("#icon-3")[0].setAttribute("src", "images/"+ wIcon3 + ".png");
+  $("#icon-3")[0].setAttribute("src", "images/"+ wIcon3 + ".svg");
   $("#temp-max-3").html(Math.round(fTempMax3) + "&#8457;");
   $("#tempc-max-3").html(Math.round(cTempMax3) + "&#8451;");
   $("#temp-min-3").html(Math.round(fTempMin3) + "&#8457;");
   $("#tempc-min-3").html(Math.round(cTempMin3) + "&#8451;");
 
 //Assign information to day 3 html elemtns
-  $("#icon-4")[0].setAttribute("src", "images/"+ wIcon4 + ".png");
+  $("#icon-4")[0].setAttribute("src", "images/"+ wIcon4 + ".svg");
   $("#temp-max-4").html(Math.round(fTempMax4) + "&#8457;");
   $("#tempc-max-4").html(Math.round(cTempMax4) + "&#8451;");
   $("#temp-min-4").html(Math.round(fTempMin4) + "&#8457;");
   $("#tempc-min-4").html(Math.round(cTempMin4) + "&#8451;");
 
 //Assign information to day 4 html elements
-  $("#icon-5")[0].setAttribute("src", "images/"+ wIcon5 + ".png");
+  $("#icon-5")[0].setAttribute("src", "images/"+ wIcon5 + ".svg");
   $("#temp-max-5").html(Math.round(fTempMax5) + "&#8457;");
   $("#tempc-max-5").html(Math.round(cTempMax5) + "&#8451;");
   $("#temp-min-5").html(Math.round(fTempMin5) + "&#8457;");
@@ -113,9 +111,9 @@ $(".tempbutton").click(function(){
 //Set background on time of day
 
   if(dayTime.indexOf('n') === -1) {
-      $(".main-container").css("background-image", "linear-gradient(0deg,rgba(155,175,191,0.6),rgba(155,175,191,0.6)), url('./images/chicago01.JPG')");
+      $(".main-container").css("background-image", "url('./images/daytime.jpg')");
   } else {
-    $(".main-container").css("background-image", "linear-gradient(0deg,rgba(155,175,191,0.8),rgba(155,175,191,0.8)), url('./images/chicago02.JPG')");
+    $(".main-container").css("background-image", "url('./images/nightime.jpg')");
   }
 
 })

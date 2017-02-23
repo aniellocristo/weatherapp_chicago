@@ -5,11 +5,8 @@ body {
 .main-container {
   margin: 50px auto;
   padding: 30px 10px;
-  /*background:linear-gradient(0deg,rgba(155,175,191,0.6),rgba(155,175,191,0.6)),url("../images/chicago01.JPG");*/
   background-size:cover;
-  /*background-color: #9BAFBF;*/
-  border-radius: 10px;
-  width: 800px;
+  max-width: 1000px;
   color: #fff;
   -webkit-box-shadow: 0 8px 6px -6px black;
      -moz-box-shadow: 0 8px 6px -6px black;
@@ -17,18 +14,20 @@ body {
 }
 
 .location {
-  text-align: right;
+  text-align: center;
   font-size: 40px;
-  margin: 4px 0 0 30px;
+  margin: 3px;
 }
 
 
 .date {
-    margin: 4px 0 0 30px;
+    text-align: center;
+    margin: 0px;
 }
 
 .time {
-    margin: 4px 0 0 30px;
+    text-align: center;
+    margin: 0px;
 }
 
 /*Toggle class*/
@@ -40,12 +39,12 @@ body {
 /*Current Day Weather*/
 
 .flex-1 {
-  display: -webkit-flex;
   display: flex;
- -webkit-align-items: space-between;
-         align-items: space-between;
- -webkit-justify-content: space-between;
-         justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid rgb(255, 255, 255) 1px;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .flex-3 {
@@ -64,7 +63,7 @@ body {
 }
 
 #day-1 {
-  height: 200px;
+  height: 150px;
   width: 200px;
   color: #fff;
 }
@@ -82,7 +81,7 @@ body {
 #icon-1 {
   display: block;
   margin: auto;
-  margin-top: -30px;
+  margin-top: 10px;
   width: 180px;
   height: 180px;
 }
@@ -112,15 +111,16 @@ body {
 .second-day {
   margin: 0 10px;
   align-items: center;
-  background:linear-gradient(to top, rgba(155,175,191,0.7), rgba(155,175,191,0.7));
-  border-radius: 10px;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-       -moz-box-shadow: 0 8px 6px -6px black;
-            box-shadow: 0 8px 6px -6px black;
   height: 175px;
   width: 175px;
   color: #fff;
   text-align: center;
+}
+
+.daystyle {
+  display: block;
+  margin-top: 4px;
+  font-size: 18px;
 }
 
 p {
@@ -129,14 +129,6 @@ p {
 
 
 /*Day 2*/
-
-#p0 {
-  display: block;
-  margin-top: 0px;
-  font-size: 18px;
-  background: rgba(165,180,200,0.9);
-  border-radius: 10px 10px 0 0px;
-}
 
 #icon-2 {
   display: block;
@@ -147,14 +139,6 @@ p {
 
 /*Day 3*/
 
-#p1 {
-  display: block;
-  margin-top: 0px;
-  font-size: 18px;
-  background: rgba(165,180,200,0.9);
-  border-radius: 10px 10px 0 0px;
-}
-
 #icon-3 {
   display: block;
   margin: -30px auto -15px auto;
@@ -164,14 +148,6 @@ p {
 
 /*Day 4*/
 
-#p2 {
-  display: block;
-  margin-top: 0px;
-  font-size: 18px;
-  background: rgba(165,180,200,0.9);
-  border-radius: 10px 10px 0 0px;
-}
-
 #icon-4 {
   display: block;
   margin: -30px auto -15px auto;
@@ -180,14 +156,6 @@ p {
 }
 
 /*Day 5*/
-
-#p3 {
-  display: block;
-  margin-top: 0px;
-  font-size: 18px;
-  background: rgba(165,180,200,0.9);
-  border-radius: 10px 10px 0 0px;
-}
 
 #icon-5 {
   display: block;
@@ -228,6 +196,7 @@ p {
   flex-direction: column;
   justify-content: center;
   margin-bottom: -100px;
+  border-bottom: none;
 }
 
 #icon-1 {
@@ -242,26 +211,23 @@ p {
 }
 
   #flex-2 {
-    display: -webkit-flex;
     display: flex;
     flex-direction: column;
-   -webkit-justify-content: center;
-           justify-content: center;
-    margin-top: 50px;
+    margin-top: 100px;
+  }
+
+  .daystyle {
+    margin-top: 10px;
   }
 
   .second-day {
     margin: 10px 0;
     align-items: center;
-    background:linear-gradient(to top, rgba(155,175,191,0.7), rgba(155,175,191,0.7));
-    border-radius: 10px;
-    	-webkit-box-shadow: 0 8px 6px -6px black;
-    	   -moz-box-shadow: 0 8px 6px -6px black;
-    	        box-shadow: 0 8px 6px -6px black;
     height: 175px;
     width: 225px;
     color: #fff;
     text-align: center;
+    border-top: rgb(255, 255, 255) 1px solid;
   }
 
 }
